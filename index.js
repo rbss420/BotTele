@@ -50,8 +50,8 @@ const config = {
     A187: 'RIBASBOT', // TOBAT SU ASU
     instagram: 'https://instagram.com/rbs.420', // INFO JANGAN DI UBAH
     nomer: 'wa.me/6282193030283', // INFO SU JNGAN DI UBAH
-    youtube: '', // 
-    whatsapp: '', // BABI
+    youtube: 'https://youtube.com/channel/UCVoeo63MfuTBPXlbj-ldX3Q', // KINTIL
+    whatsapp: 'https://chat.whatsapp.com/C1JvL9GQCRG6q2qbUVUopm', // BABI
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -79,7 +79,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code BY T027BOT`)
+   console.log(`[ ${time} ] QR code BY RIBASBOT`)
 })
 
 client.on('credentials-updated', () => {
@@ -93,7 +93,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@kingg_squard028`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@rba.420`)
 
 client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
@@ -168,7 +168,7 @@ client.on('group-participants-update', async (anu) => {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6287775452636@s.whatsapp.net"] // ganti nomer lu
+			const ownerNumber = ["6282193030283@s.whatsapp.net"] // ganti nomer lu
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -670,7 +670,7 @@ break
                                 teks += '┣➥' 
                                 teks += `@${mem.jid.split('@')[0]}\n`
                                 }
-                                teks += '╚═〘 T027BOT 〙'
+                                teks += '╚═〘 RIBASBOT 〙'
                                 members_id.push(mem.jid)
                                 break
 
@@ -759,7 +759,7 @@ break
             case 'owner':
             case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-       client.sendMessage(from, 'Nih nomor Owner/Creator T027BOT',MessageType.text, { quoted: mek} )
+       client.sendMessage(from, 'Nih nomor pacarku eh ownerku/Creator RIBASYT',MessageType.text, { quoted: mek} )
            break    
            case 'demote':
 					if (!isGroup) return reply(mess.only.group)
