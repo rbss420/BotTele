@@ -35,9 +35,9 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:Owner T027BOT\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator T027BOT;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6287775452636:+62 877-7545-2636\n' // JANGAN KEK BABI SU
+            + 'FN:Owner RIBASYT\n' // MENDING LU TOBAT SU!
+            + 'ORG:Creator RIBASYT;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6282193030283:+62 821-9303-0283\n' // JANGAN KEK BABI SU
             + 'END:VCARD' // Bacot
 prefix = '!'
 blocked = []            
@@ -47,10 +47,10 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: 'T027BOT', // TOBAT SU ASU
-    instagram: 'https://instagram.com/kingg_squard028', // INFO JANGAN DI UBAH
-    nomer: 'wa.me/6287775452636', // INFO SU JNGAN DI UBAH
-    youtube: '', // KINTIL
+    A187: 'RIBASBOT', // TOBAT SU ASU
+    instagram: 'https://instagram.com/rbs.420', // INFO JANGAN DI UBAH
+    nomer: 'wa.me/6282193030283', // INFO SU JNGAN DI UBAH
+    youtube: '', // 
     whatsapp: '', // BABI
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
